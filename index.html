@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'tablet': '768px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'desktop': '1440px',
+                    // => @media (min-width: 1024px) { ... }
+                },
+            }
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="font-[livvic] bg-[#002529]">
+    <div class="bg-[#014E56] justify-between flex flex-col text-white h-[520px] px-[24px] pt-[48px] pb-[108px] tablet:h-[556px] tablet:px-[40px] tablet:pt-[64px] tablet:pb-[112px] desktop:h-[517px] desktop:px-[165px] desktop:pt-[73px] desktop:pb-[120px]">
+        <header class="mx-auto flex justify-between items-center w-[327px] h-[32px] tablet:max-w-[1440px] tablet:w-[689px] tablet:h-[48px] desktop:w-[1110px]">
+            <a href=""><img src="./logo.svg" alt="logo"></a>
+            <a class="tablet:hidden" href=""><img src="./menu.svg" alt="menu"></a>
+            <ul class="hidden tablet:flex tablet:items-center tablet:gap-[40px] tablet:font-[600] tablet:text-[18px] tablet:leading-[28px]">
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><button class="w-[153px] h-[48px] rounded-[24px] border-[2px] border-solid border-[#FFFFFF]">contact us</button></li>
+            </ul>
+        </header>
+        <section class="flex flex-col justify-between text-center mx-auto w-[327px] h-[252px] tablet:max-w-[1440px] tablet:w-[683px] tablet:h-[220px] tablet:px-[113px] desktop:flex-row desktop:w-[1110px] desktop:h-[156px] desktop:px-0 desktop:gap-[200px]">
+            <h1 class="font-[700] text-[40px] leading-[40px] tablet:text-[64px] tablet:leading-[56px] desktop:leading-[100px] desktop:text-left">About</h1>
+            <p class="font-[600] text-[15px] leading-[28px] desktop:text-[18px] desktop:text-left">We help companies build dynamic teams made up of top global talent. Using our network of passionate
+                professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the
+                best products and experiences. We’ll bring those teams to you.</p>
+        </section>
+    </div>
+    <main>
+        <section class="bg-[#004047]">
+            <div class="mx-auto text-center text-white font-[700] w-[375px] h-[1171px] px-[24px] pt-[88px] pb-[112px] tablet:max-w-[1440px] tablet:w-[768px] tablet:h-[911px] tablet:px-[97px] tablet:pt-[100px] tablet:pb-[150px] desktop:w-[1440px] desktop:h-[646px] desktop:px-[165px] desktop:pt-[71px] desktop:pb-[179px]">
+                <h2 class="mb-[48px] text-[32px] leading-[32px] desktop:mb-[69.5px] desktop:text-[48px] desktop:leading-[48px]">Meet the directors</h2>
+                <div class="flex flex-col gap-[52px] tablet:flex-row tablet:flex-wrap tablet:justify-center tablet:gap-[11px] desktop:flex-nowrap desktop:gap-[30px]">
+                    <div class="relative bg-[#012F34] flex flex-col items-center w-[327px] h-[253px] px-[24px] pt-[32px] tablet:w-[281px] desktop:w-[350px] desktop:h-[274.73px] desktop:pt-[44px]">
+                        <img class="w-[96px] h-[96px] mb-[16px] desktop:mb-[24px]" src="./director1.svg" alt="director">
+                        <h3 class="text-[18px] leading-[28px] text-[#79C8C7]">Nikita Marks</h3>
+                        <p class="italic text-[15px] leading-[25px]">Founder & CEO</p>
+                        <img class="absolute bottom-[-28px]" src="./plus.svg" alt="plus">
+                    </div>
+                    <div class="relative bg-[#012F34] flex flex-col items-center w-[327px] h-[253px] px-[24px] pt-[32px] tablet:w-[281px] desktop:w-[350px] desktop:h-[274.73px] desktop:pt-[44px]">
+                        <img class="w-[96px] h-[96px] mb-[16px] desktop:mb-[24px]" src="./director2.svg" alt="director">
+                        <h3 class="text-[18px] leading-[28px] text-[#79C8C7]">Cristian Duncan</h3>
+                        <p class="italic text-[15px] leading-[25px]">Co-founder & COO</p>
+                        <img class="absolute bottom-[-28px]" src="./plus.svg" alt="plus">
+                    </div>
+                    <div class="relative bg-[#012F34] flex flex-col items-center w-[327px] h-[253px] px-[24px] pt-[32px] tablet:w-[281px] tablet:mt-[65px] desktop:w-[350px] desktop:h-[274.73px] desktop:pt-[44px] desktop:mt-0">
+                        <img class="w-[96px] h-[96px] mb-[16px] desktop:mb-[24px]" src="./director3.svg" alt="director">
+                        <h3 class="text-[18px] leading-[28px] text-[#79C8C7]">Cruz Hamer</h3>
+                        <p class="italic text-[15px] leading-[25px]">Co-founder & CTO</p>
+                        <img class="absolute bottom-[-28px]" src="./plus.svg" alt="plus">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#012F34]">
+            <div class="mx-auto flex flex-col justify-between items-center text-center text-white font-[700] w-[375px] h-[518px] px-[24px] py-[72px] tablet:max-w-[1440px] tablet:w-[768px] tablet:h-[308px] tablet:px-[39px] tablet:py-[100px] desktop:w-[1440px] desktop:h-[356px] desktop:px-[165px] desktop:py-[114px]">
+                <h2 class="text-[32px] leading-[32px] desktop:text-[48px] desktop:leading-[48px]">Some of our clients</h2>
+                <div class="flex flex-col justify-between items-center w-[163px] h-[295px] tablet:flex-row tablet:w-[689px] tablet:h-[28px] desktop:w-[1110px] desktop:h-[37px]">
+                    <img class="tablet:hidden desktop:block" src="./client1.svg" alt="client">
+                    <img class="tablet:hidden desktop:block" src="./client2.svg" alt="client">
+                    <img class="tablet:hidden desktop:block" src="./client3.svg" alt="client">
+                    <img class="tablet:hidden desktop:block" src="./client4.svg" alt="client">
+                    <img class="tablet:hidden desktop:block" src="./client5.svg" alt="client">
+                    <img class="hidden tablet:block desktop:hidden" src="./client21.svg" alt="client">
+                    <img class="hidden tablet:block desktop:hidden" src="./client22.svg" alt="client">
+                    <img class="hidden tablet:block desktop:hidden" src="./client23.svg" alt="client">
+                    <img class="hidden tablet:block desktop:hidden" src="./client24.svg" alt="client">
+                    <img class="hidden tablet:block desktop:hidden" src="./client25.svg" alt="client">
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#F67E7E]">
+            <div class="mx-auto flex flex-col justify-between items-center text-center text-[#012F34] w-[375px] h-[302px] px-[24px] py-[83px] tablet:flex-row tablet:text-left tablet:max-w-[1440px] tablet:w-[768px] tablet:h-[200px] tablet:px-[97px] tablet:py-[76px] desktop:w-[1440px] desktop:px-[262px]">
+                <h3 class="font-[700] text-[32px] leading-[32px] desktop:text-[48px] desktop:leading-[48px]">Ready to get started?</h3>
+                <button class="rounded-[24px] w-[153px] h-[48px] border-[2px] border-solid border-[#012F34] font-[600] text-[18px] leading-[28px]">contact us</button>
+            </div>
+        </section>
+    </main>
+    <footer class="pt-[66px] tablet:pt-[30px] desktop:pt-[48px]">
+        <div class="flex mx-auto items-center flex-col gap-[24px] tablet:max-w-[768px] tablet:flex-row tablet:gap-[478px] tablet:pl-[56px] desktop:max-w-[1440px] desktop:pl-[160px] desktop:pr-[171px] desktop:justify-between">
+            <a class="tablet:hidden" href=""><img src="logo.svg" alt="logo"></a>
+            <a class="hidden tablet:block desktop:hidden" href=""><img src="logo.svg" alt="logo"></a>
+            <a class="hidden desktop:block" href=""><img src="logo.svg" alt="logo"></a>
+            <ul class="flex items-center gap-[16px]">
+                <img src="./facebook.svg" alt="facebook">
+                <img src="./pinterest.svg" alt="pinterest">
+                <img src="./twitter.svg" alt="twitter">
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
